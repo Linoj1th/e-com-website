@@ -1,13 +1,19 @@
-
-import { BrowserRouter } from 'react-router-dom';
+import React from 'react';
 import './App.css';
 import NavBar from './components/NavBar';
+import Rout from './components/rout'; 
+import { BrowserRouter } from 'react-router-dom';
+import Home from './components/home';
+
+
 
 function App() {
   return (
     <>
     <BrowserRouter> 
-            <NavBar/>
+           <home/>
+           <NavBar/>
+            <Rout/>
     </BrowserRouter>
    
     
@@ -16,3 +22,6 @@ function App() {
 }
 
 export default App;
+
+
+
