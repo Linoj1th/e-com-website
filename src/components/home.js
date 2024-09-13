@@ -1,6 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 import { FaArrowRightLong } from "react-icons/fa6";
+import { FiTruck } from "react-icons/fi";
+import { BsCurrencyDollar } from "react-icons/bs";
+import { FaPercent } from "react-icons/fa";
+import { FaHeadphones } from "react-icons/fa6";
 import './home.css'
 
 const Home = () => {
@@ -55,7 +59,46 @@ const Home = () => {
       </div>
     </div>
   </div>
-
+  <div className='about'>
+    <div className='container'>
+      <div className='box'>
+        <div  className='icon'>
+        <FiTruck />
+        </div>
+        <div className='detail'>
+          <h3>Free Shipping</h3>
+          <p>Oder above $1000</p>
+        </div>
+      </div>
+      <div className='box'>
+        <div  className='icon'>
+        <BsCurrencyDollar />
+        </div>
+        <div className='detail'>
+          <h3>Return & Refund</h3>
+          <p>Money Back Gaurenty</p>
+        </div>
+      </div>
+      <div className='box'>
+        <div  className='icon'>
+        <FaPercent />
+        </div>
+        <div className='detail'>
+          <h3>Member Discount</h3>
+          <p>On every Oder</p>
+        </div>
+      </div>
+      <div className='box'>
+        <div  className='icon'>
+        <FaHeadphones />
+        </div>
+        <div className='detail'>
+          <h3>Customer Support</h3>
+          <p>24/7 Call Support</p>
+        </div>
+      </div>
+    </div>
+  </div>
     </>
   )
 }
